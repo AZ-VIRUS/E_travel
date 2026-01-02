@@ -1,31 +1,25 @@
 package com.aayusha.etravel.service;
 
 import java.util.List;
-
 import com.aayusha.etravel.entity.Accommodation;
 
 public interface AccommodationService {
-	
-	public void saveAccommodation(Accommodation accommodation);
-	
-	public List<Accommodation> getAllAccommodations();
-	
-	public Accommodation getAccommodation(int id);
-	
-	public List<Accommodation> getAccommodationByType(String type);
-	
-	public List<Accommodation> getAccommodationByStatus(String status);
-	
-	public List<Accommodation> getAccommodationByLocation(String location);
-	
-	public List<Accommodation> getAccommodationByPriceLessThan(double price);
-	
-	public List<Accommodation> getAccommodationByPriceGreaterThan(double price);
-	
-	public List<Accommodation> getAccommodationByPriceBetween(double price1, double price2);
-	
-	public void updateAccommodation(Accommodation accommodation);
-	
-	public void deleteAccommodation(Accommodation accommodation);
-
+    
+    void saveAccommodation(Accommodation accommodation);
+    
+    List<Accommodation> getAllAccommodations();
+    
+    Accommodation getAccommodation(int id);
+    
+    void deleteAccommodation(Accommodation accommodation);
+    
+    // Optional filtering
+    List<Accommodation> getAccommodationByType(String type);
+    List<Accommodation> getAccommodationByStatus(String status);
+    List<Accommodation> getAccommodationByLocation(String location);
+    List<Accommodation> getAccommodationByPriceLessThan(double price);
+    List<Accommodation> getAccommodationByPriceGreaterThan(double price);
+    List<Accommodation> getAccommodationByPriceBetween(double price1, double price2);
+    
+    void updateAccommodation(Accommodation accommodation);
 }

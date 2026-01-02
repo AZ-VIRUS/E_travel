@@ -19,11 +19,7 @@ public class AccommodationBookingServiceImpl implements AccommodationBookingServ
 	@Autowired
 	private BookingRepository bookingRepository;
 	
-	@Override
-	public int saveAccommodationBooking(AccommodationBookingDetail bookingDetail) {
-		
-		return bookingRepository.save(bookingDetail).getId();
-	}
+	
 
 	@Override
 	public List<AccommodationBookingDetail> getAllBookings() {
@@ -66,6 +62,12 @@ public class AccommodationBookingServiceImpl implements AccommodationBookingServ
 	public List<AccommodationBookingDetail> getAllBookingsByUserDetail(UserDetail userDetail) {
 		
 		return bookingRepository.findByUserDetail(userDetail);
+	}
+
+	@Override
+	public int saveAccommodationBooking(AccommodationBookingDetail bookingDetail) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	

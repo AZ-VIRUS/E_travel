@@ -7,8 +7,15 @@
 <title>${title }</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/home_style.css">
 </head>
+
 <body>
 	<%@ include file="menu.jsp"%>
-	<h1>Welcome to E-Travel Management Application</h1>
+	<h1>WELCOME <br>TO E-TRAVEL<br> MANAGEMENT APPLICATION</h1>
+	<button onclick="alert('HELLO WANDERER!')">
+    HELLO!
+  </button>
+  <br>
+  <button onclick="alert('<3')">WITH LOVE<3</button>
+	
 </body>
 </html>
