@@ -57,31 +57,7 @@ com.aayusha.etravel
 
 ---
 
-## Setup Instructions
 
-1. **Clone the Repository**
-```bash
-git clone <repository-url>
-cd eTravel
-Configure Database
-
-Update application.properties with your MySQL credentials:
-
-spring.datasource.url=jdbc:mysql://localhost:3306/etravel_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-spring.jpa.hibernate.ddl-auto=update
-
-
-Build & Run
-
-mvn clean install
-mvn spring-boot:run
-
-
-Access the Application
-
-Open your browser and navigate to http://localhost:8080/admin/home
 
 Notes
 
